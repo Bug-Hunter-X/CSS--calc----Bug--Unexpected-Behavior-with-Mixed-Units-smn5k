@@ -1,0 +1,13 @@
+/* bug.css */
+.buggy {
+  width: calc(100% - 10px + 5%); /* Incorrect; causes unexpected layout */
+  background-color: red;
+  height: 50px;
+}
+
+/* bugSolution.css */
+.fixed {
+  width: calc((100% - 10px) + 5%); /* Correct; using parentheses */
+  background-color: green;
+  height: 50px;
+}
